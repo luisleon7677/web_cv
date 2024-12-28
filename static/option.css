@@ -1,24 +1,4 @@
 .padre{
-    background-color: aqua;
-    border: 1px solid red;
-    height: 50%;
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
+ 
 }
 
-.padre div{
-    
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-}
-.padre2{
-    border: 2px solid black;
-    width: 800px;
-}
-.hijo{
-    border: 1px solid red;
-}

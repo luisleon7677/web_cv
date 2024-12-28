@@ -7,10 +7,10 @@ const titulo= document.getElementById('t');
 let currentIndex =0;
 
 const images =[
-    {src:'img/port1.jpg',text:'texto 1',titulo:'titulo1'},
-    {src:'img/port2.jpg',text:'texto 2',titulo:'titulo2'},
-    {src:'img/port3.jpg',text:'texto 3',titulo:'titulo3'},
-    {src:'img/port4.jpg',text:'texto 4',titulo:'titulo4'}
+    {src:'img/port1.jpg',text:'La innovación es parte esencial en todos mis proyectos, siempre busco salir del status quo.',titulo:'Soy Innovador'},
+    {src:'img/port2.jpg',text:'Comencé a programar en 2018 y desde entonces me apasiona hacerlo; es mi mejor pasatiempo.',titulo:'Soy programador'},
+    {src:'img/port3.jpg',text:'Forme parte de equipos en los que trabajé con herramientas para analizar datos estadísticos.',titulo:'Soy Analista'},
+    {src:'img/port4.jpg',text:'El conocimiento es la mejor arma que puedo elegir llevar a una guerra.',titulo:'Soy Autodidacta'}
 ];
 
 btnRight.addEventListener('click', changeContent);
