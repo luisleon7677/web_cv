@@ -1,10 +1,19 @@
 
 const btnRight= document.querySelector('.btn-right');
 const btnLeft= document.querySelector('.btn-left');
+const displayMenu= document.querySelector('.page-menu ul');
 const image = document.querySelector('.img-carrusel');
 const text= document.getElementById('p');
 const titulo= document.getElementById('t');
+const botonAmburguesa = document.getElementById('icon-menu');
+const menu = document.getElementById('ul-page');
+const cv = document.getElementById('sidebar-boton');
 let currentIndex =0;
+
+cv.addEventListener('click',()=>{
+    alert('Esta página es mi cv');
+});
+
 
 const images =[
     {src:'img/port1.jpg',text:'La innovación es parte esencial en todos mis proyectos, siempre busco salir del status quo.',titulo:'Soy Innovador'},
@@ -15,6 +24,30 @@ const images =[
 
 btnRight.addEventListener('click', changeContent);
 btnLeft.addEventListener('click', changeContent);
+
+function toggleDisplay() {
+    if (window.innerWidth > 800) {
+        menu.style.display='flex';
+        //myElement.style.display = 'block';
+      } else {
+        menu.style.display = 'none';
+        //myElement.style.display = 'none';
+      }
+}
+menu.addEventListener('resize',()=>{
+    
+});
+
+botonAmburguesa.addEventListener('click', ()=>{
+    if (menu.style.display === "none") {
+        menu.style.display = "block"; // Muestra el elemento
+    } else {
+        menu.style.display = "none"; // Oculta el elemento
+    }
+    
+});
+
+
 
 function changeContent(){
     currentIndex=(currentIndex+1)%images.length; // Avanza al siguiente índice y vuelve al inicio si llega al final
@@ -27,3 +60,5 @@ function changeContent(){
 
 };
 
+toggleDisplay();
+window.addEventListener('resize', toggleDisplay);
